@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8ff;
+    color: #17243a;
+}
+
+/* Navigation */
+
+nav {
+    background: #082d5d;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 span {
+    color: #00bfff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+
+/* Home */
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 8%;
+    background: linear-gradient(
+        120deg, #d9edff, white
+    );
+}
+
+.home h1 {
+    font-size: 55px;
+    color: #082d5d;
+    margin: 10px 0;
+}
+
+.home h2 {
+    color: #087dcc;
+    margin-bottom: 15px;
+}
+
+.home p {
+    margin-bottom: 25px;
+}
+
+.home img {
+    width: 280px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 6px solid #087dcc;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    background: #087dcc;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #082d5d;
+}
+
+/* Sections */
+
+section:not(.home) {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+section h1 {
+    color: #082d5d;
+    margin-bottom: 25px;
+}
+
+#about p {
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* Skills */
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills div {
+    background: #082d5d;
+    color: white;
+    padding: 20px 35px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Education */
+
+.card {
+    background: white;
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 650px;
+    border-left: 5px solid #087dcc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+.card h3 {
+    color: #087dcc;
+    margin-bottom: 10px;
+}
+
+/* Interests */
+
+#interests p {
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* Contact */
+
+#contact {
+    background: #e4f2ff;
+    line-height: 2;
+}
+
+/* Footer */
+
+footer {
+    background: #082d5d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+
+    .home img {
+        width: 220px;
+        height: 250px;
+    }
+}
